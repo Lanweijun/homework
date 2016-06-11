@@ -26,8 +26,13 @@ onload=function(){
 			}else{
 				num++;
 			}
-			if(num<=1){
+			if(num<=0){
 				num = 1;
+			}
+			if(num==1){
+				d1a.style.display='block';	
+			}else{
+				dia.style.display='none';
 			}
 			if(num==2){
 				console.log('3saf')
