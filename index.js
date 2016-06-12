@@ -12,7 +12,7 @@ onload=function(){
 	var d4a = document.querySelector('.d4a');
 	var d5a = document.querySelector('.d5a');
 	var d6a = document.querySelector('.d6a');
-	var num = 1;
+	var num = 0;
 
 	bor.onclick=function(){
 		go.style.display='block';	
@@ -20,7 +20,6 @@ onload=function(){
 		move.style.transform='translateY(-14.3%)';
 		d1a.style.display='block';
 		onmousewheel=function(e){
-				console.log(e.wheelDelta)
 			if(e.wheelDelta>0){
 				num--;
 			}else{
@@ -30,12 +29,11 @@ onload=function(){
 				num = 1;
 			}
 			if(num==1){
-				d1a.style.display='block';	
+				d1a.style.display='block';
 			}else{
-				dia.style.display='none';
+				d1a.style.display='none';
 			}
 			if(num==2){
-				console.log('3saf')
 				d2a.style.display='block';
 			}else{
 				d2a.style.display='none';
@@ -67,8 +65,8 @@ onload=function(){
 	}
 
 	go.onclick = function(){
-		move.style.transform='translateY(-'+(num+1)*14.3+'%)';
 		num++;
+		move.style.transform='translateY(-'+num*14.3+'%)';
 		if(num==2){
 			d2a.style.display='block';
 		}else{
