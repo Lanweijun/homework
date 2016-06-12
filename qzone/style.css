@@ -942,11 +942,13 @@
 		.d6b{
 			width:216px;
 			height:102px;
-			position:relative;
-			top:65%;
+			position:fixed;
+			left:50%;
 			margin:auto;
 			background-size: 1076px 141px;
 			background-position: -321px 0;
+			bottom:-4px;
+			margin-left:-108px;
 		}
 		.d6a1{
 			margin:auto;
